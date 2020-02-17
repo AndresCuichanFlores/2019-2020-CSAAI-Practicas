@@ -1,0 +1,19 @@
+body {
+  background-color: powderblue;
+}
+#T_texto {
+  font-family:"Times New Roman";
+  font-size:110%;
+}
+h0 {
+  font-family:Times;
+  font-size:130%;
+}
+#T_Bordes {
+  font-family:"Courier New";
+  background-color:rgba(0, 58, 255,0.5);
+  font-size:150%;
+}
+#Color_Verde{
+  color: green;
+}
