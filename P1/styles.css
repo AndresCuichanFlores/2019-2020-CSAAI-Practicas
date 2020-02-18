@@ -1,5 +1,9 @@
 body {
-  background-color: powderblue;
+  background-color:rgba(51, 6, 238 ,0.5);
+  background-size: 250px 50px;
+  background-image: url(https://drama.fandom.com/es/wiki/Special:FilePath/Fondo_WD.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 #T_texto {
   font-family:"Times New Roman";
@@ -13,7 +17,16 @@ h0 {
   font-family:"Courier New";
   background-color:rgba(0, 58, 255,0.5);
   font-size:150%;
+  margin-left: 30px;
 }
 #Color_Verde{
   color: green;
+}
+#caja{
+  background-color:rgba(95, 224, 236,0.5);
+  margin-left: 300px;
+  margin-right: 300px
+}
+#videos{
+  margin-left: 350px;
 }
