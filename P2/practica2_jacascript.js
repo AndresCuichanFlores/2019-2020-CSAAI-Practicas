@@ -1,51 +1,80 @@
 console.log("Ejecutando JS...");
 
-const ejemplo = document.getElementById('ejemplo');
+const display = document.getElementById('display');
 const boton1 = document.getElementById('boton1');
 const boton2 = document.getElementById('boton2');
 const boton3 = document.getElementById('boton3');
 const boton_suma = document.getElementById('boton_suma');
 const boton_igual = document.getElementById('boton_igual');
+const clear = document.getElementById("clear")
 
 
-console.log(ejemplo.innerHTML)
+/*
+const gui = {
+  display: document.getElementById("display"),
+  boton_inc: document.getElementById("boton_suma"),
+  boton_dec: document.getElementById("boton_igual")
+}
 
- var cadena = [];
+const counter = {
+  valor: 0,
+  inc : function(value) {
+    console.log(this.valor)
+    console.log(counter.valor)
+    this.valor += value;
+    console.log(this.valor)
+    console.log(counter.valor)
+    gui.display.innerHTML = this.valor;
+  }
+}
+
+gui.boton_inc.onclick = () => {
+  counter.inc(1);
+}
+
+gui.boton_dec.onclick = () =>{
+  counter.inc(-1);
+}
+pepe = "10+22"
+console.log(eval(pepe))
+
+*/
+
+
+
 
 boton1.onclick = () => {
-  console.log("Click!");
-  ejemplo.innerHTML = ejemplo.innerHTML + 1
-
-
-
-    //-- Cambiar el color de fondo
-  //-- Si no tenia color asignado, poner amarillo
-  if (boton1.style.backgroundColor=="") {
-    boton1.style.backgroundColor = "yellow";
-
-
-  //-- Ya tiene color: quitarselo
-  } else {
-    boton1.style.backgroundColor = "";
+  if (display.innerHTML == 0){
+    display.innerHTML = boton1.value
+  }else{
+    display.innerHTML += boton1.value
   }
 }
 
 boton2.onclick = () => {
-  ejemplo.innerHTML = ejemplo.innerHTML + 2
-  cadena.push("2")
-
-
-
+  if (display.innerHTML == 0){
+    display.innerHTML = boton2.value
+  }else{
+    display.innerHTML += boton2.value
+  }
 }
 boton3.onclick = () => {
-  ejemplo.innerHTML = ejemplo.innerHTML + 3
-  cadena.push("3")
+  if (display.innerHTML == 0){
+    display.innerHTML = boton3.value
+  }else{
+    display.innerHTML += boton3.value
+  }
+}
+clear.onclick = () => {
+  display.innerHTML = 0
+
 }
 boton_suma.onclick = () => {
-  ejemplo.innerHTML = ejemplo.innerHTML + "+"
+  display.innerHTML += boton_suma.value
 
 }
 boton_igual.onclick = () => {
-  ejemplo.innerHTML = ejemplo.innerHTML + "="
+  console.log(display.innerHTML)
+  display.innerHTML = eval(display.innerHTML)
 
 }
