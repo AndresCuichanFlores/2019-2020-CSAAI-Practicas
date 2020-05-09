@@ -3,31 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>Practica2</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="practica2_jacascript.js" defer>
       </script>
+  </head>
   <body>
 
-    <h1 id="display">0</h1>
+    <div id="contenedor_abrir">
+        <img src="Screenshot_1.png" style="width:100%;height:100%;position:relative">
+        <button class ="button_centrado" type="button" onclick="Open_Calculadora()">ABRIR<br>Calculadora</button><br>
+        <h3 id="Nota_maximo_digitos">Nota: Memoria llena cuando pulse 80 digitos.<br>
+        Porfavor pulse AC o DEL para continuar. =)</h3>
+    </div>
 
-    <button type="button" id="boton1" value="1" class="digito">1</button>
-    <button type="button" id="boton2" value="2" class="digito">2</button>
-    <button type="button" id="boton3" value="3" class="digito">3</button>
-    <br></br>
-    <button type="button" id="boton4" value="4" class="digito">4</button>
-    <button type="button" id="boton5" value="5" class="digito">5</button>
-    <button type="button" id="boton6" value="6" class="digito">6</button>
-    <br></br>
-    <button type="button" id="boton7" value="7" class="digito">7</button>
-    <button type="button" id="boton8" value="8" class="digito">8</button>
-    <button type="button" id="boton9" value="9" class="digito">9</button>
-    <br></br>
-    <button id ="boton_suma" value="+">+</button>
-    <button id ="boton_resta" value="-">-</button>
-    <button id ="boton_dividir" value="/">/</button>
-    <button id ="boton_multiplicar" value="*">X</button>
-    <button id ="boton_borrar"><---</button>
-    <button id ="boton_igual">=</button>
-    <button type="button" id="clear">AC</button>
+
+    <div id="caja_todos_elementos">
+
+      <img src="Screenshot.png" style="width:100%;height:100%;position:relative">
+
+      <div id="caja_display">
+        <h1 id="display">0</h1>
+        <h2 id="error_maximo_digitios">MAX</h2>
+      </div>
+
+      <div id ="caja_botones">
+
+        <button type="button" id="boton_borrar"        value="" class="digito"></button>
+        <button type="button" id="clear"               value="" class="digito"></button>
+        <button type="button" id="boton_dividir"       value="/" class="digito"></button>
+        <button type="button" id="boton_multiplicar"   value="*" class="digito"></button><br>
+        <button type="button" id="boton7"              value="7" class="digito"></button>
+        <button type="button" id="boton8"              value="8" class="digito"></button>
+        <button type="button" id="boton9"              value="9" class="digito"></button>
+        <button type="button" id="boton_resta"         value="-" class="digito"></button><br>
+        <button type="button" id="boton4"              value="4" class="digito"></button>
+        <button type="button" id="boton5"              value="5" class="digito"></button>
+        <button type="button" id="boton6"              value="6" class="digito"></button>
+        <button type="button" id="boton_suma"          value="+" class="digito"></button><br>
+        <button type="button" id="boton1"              value="1" class="digito"></button>
+        <button type="button" id="boton2"              value="2" class="digito"></button>
+        <button type="button" id="boton3"              value="3" class="digito"></button><br>
+        <button type="button" id="boton0"              value="0" class="digito"></button>
+        <button type="button" id="boton00"             value="00" class="digito"></button>
+        <button type="button" id="boton_punto"         value="." class="digito"></button>
+        <button type="button" id="boton_igual"         value="2" class="digito_igual"></button>
+
+      </div>
+
+
+    </div>
+
+    <div id ="caja_historial">
+      <img src="Screenshot_2.png" style="width:100%;height:100%;position:relative">
+      <h1 id="display_2">0</h1>
+
+
+    </div>
+
+
 
 
   </body>

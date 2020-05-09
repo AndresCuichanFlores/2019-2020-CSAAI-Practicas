@@ -1,0 +1,117 @@
+#contenedor_abrir{
+    position: relative;
+    width:300px;
+    height:550px;
+
+}
+
+
+.button_centrado{
+    background-color: rgba(255,255,255,.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 10px;
+}
+
+
+#Nota_maximo_digitos{
+    position: absolute;
+    color: red;
+    top: 400px;
+    bottom: 0;
+    right: 0;
+    left: 10px;
+}
+
+
+#caja_todos_elementos{
+    position: relative;
+    width:300px;
+    height:550px;
+
+
+}
+
+#caja_display{
+    position: absolute;
+
+    width:100%;
+    height:250px;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#display{
+    position: relative;
+    word-wrap: break-word;
+    color: white;
+}
+
+#error_maximo_digitios{
+    position: absolute;
+    color: red;
+    top: 190px;
+    bottom: 0;
+    right: 0;
+    left: 230px;
+}
+
+
+
+#caja_botones{
+    position: absolute;
+    width:100%;
+    height:300px;
+    top: 250px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+
+
+button.digito{
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  padding: 20px;
+  width: 24%;
+  height:60px;
+
+}
+button.digito_igual{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  width: 25%;
+  height:120px;
+
+  top: 180px;
+  bottom: 0;
+  right: 0;
+  left: 225px;
+
+}
+
+#caja_historial{
+    position: relative;
+    background: red;
+    width:300px;
+    height:550px;
+}
+
+#display_2{
+    position: absolute;
+    word-wrap: break-word;
+    color: blue;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
