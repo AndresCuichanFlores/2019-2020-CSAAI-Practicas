@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practica3</title>
+    <script src="bola.js"></script>
+    <script src="raqueta.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="practica3_jacascript.js" defer>
+      </script>
+  </head>
+  <body>
+
+   <canvas id="canvas" width="600" height = "400"></canvas>
+
+  <div id="start">
+    <img src="start.png" style="width:100%;height:100%;position:absolute">
+    <button id ="button_start" type="button" onclick="start_juego()"></button><br>
+  </div>
+
+  <div id="caja_finish">
+      <img src="finish.png" style="width:100%;height:100%;position:absolute">
+      <button id ="button_finish" type="button" onclick="finish_juego()"></button><br>
+  </div>
+
+  <div id="pagina_principal">
+    <img src="pagina_principal2.png" style="width:100%;height:100%;position:absolute">
+    <div id="caja_playervsplayer">
+      <img src="plyvsply.png" style="width:100%;height:100%;position:absolute">
+      <button id ="button__playervsplayer" type="button" onclick="juego_pvp()"></button><br>
+    </div>
+    <div id="caja_playervspc">
+      <img src="playervspc.png" style="width:100%;height:100%;position:absolute">
+      <button id ="button__playervspc" type="button" onclick="juego_plyvspc()"></button><br>
+    </div>
+    <div id="caja_playervsonline">
+      <img src="playvsonline.png" style="width:100%;height:100%;position:absolute">
+      <button id ="button__playervsonline" type="button" onclick="juego_plyvsonline()"></button><br>
+    </div>
+    <div id="caja_settings">
+      <button id ="button__settings" type="button" onclick="juego_settings()"></button><br>
+    </div>
+  </div>
+  <div id="pagina_settings">
+    <img src="pagina_settings.png" style="width:100%;height:100%;position:absolute">
+    <div id="caja_exit">
+        <img src="exit.png" style="width:100%;height:100%;position:absolute">
+        <button id ="button_exit" type="button" onclick="volver_pagina_principal()"></button>
+    </div>
+    <div id="caja_color_player2">
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('raqueta_izquierda','red')"></button>
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('raqueta_izquierda','yellow')"></button>
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('raqueta_izquierda','blue')"></button>
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('raqueta_izquierda','green')"></button>
+    </div>
+    <div id="caja_color_player1">
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('raqueta_derecha','red')"></button>
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('raqueta_derecha','yellow')"></button>
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('raqueta_derecha','blue')"></button>
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('raqueta_derecha','green')"></button>
+    </div>
+    <div id="caja_color_bola">
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('bola','red')"></button>
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('bola','yellow')"></button>
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('bola','blue')"></button>
+      <button class ="button_color" type="button" onclick="color_nuevo_elemento('bola','green')"></button>
+    </div>
+  </div>
+
+  <div id="pagina_online">
+    <div id="caja_iniciar_sesion">
+      <img src="iniciar_sesion.png" style="width:100%;height:100%;position:absolute">
+      <input id="caja_input" type="text" value="">
+      <button id ="button_buscar_jugadores_online" type="button" onclick="buscar_jugadores_online()"></button>
+    </div>
+    <div id="caja_buscando_jugadores">
+      <img id="gif_buscando_jugadores"src="buscando_partida.gif" style="width:100%;height:100%;position:absolute;display:none">
+      <img id="partida_encontrada_imagen"src="partida_encontrada.png">
+      <img id="foto_jugador_online"src="foto_jugador_online.png">
+      <img id="vs_imagen"src="vs_imagen.png">
+      <img id="aceptar_partida"src="aceptar_partida.png">
+      <div id="ficha_jugador_online">
+        <h4 id="nombre_jugador_ficha">PEPE</h4>
+      </div>
+    </div>
+  </div>
+
+
+
+  </body>
+</html>

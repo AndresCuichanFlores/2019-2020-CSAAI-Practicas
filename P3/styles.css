@@ -1,0 +1,359 @@
+body {
+  background-color: lightblue;
+}
+
+/*.color {
+  background: red;
+}*/
+
+#start{
+  position: absolute;
+  width  :300px;
+  height :250px;
+  top:100px;
+  bottom:  0;
+  right: 0;
+  left: 150px;
+}
+
+#button_start{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 100%;
+  height: 40%;
+  top:80px;
+  bottom:  0;
+  right: 0;
+  left: 0;
+}
+
+#canvas{
+  position: relative;
+  display : inline-block;
+  background-color: black;
+  top:0;
+  bottom:  0;
+  right: 0;
+  left: 0;
+}
+
+#caja_finish{
+  position: relative;
+  width  :100px;
+  height :100px;
+  top:0;
+  bottom:  0px;
+  right: 0;
+  left: 0;
+}
+
+#button_finish{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 70%;
+  height: 40%;
+  top:16px;
+  bottom: 0;
+  right: 0;
+  left: 15px;
+}
+
+#pagina_principal{
+  position: absolute;
+  width  :600px;
+  height :400px;
+  background-color: red;
+  top:8px;
+  bottom:  0;
+  right: 0;
+  left: 8px;
+}
+
+#caja_playervsplayer{
+  position: absolute;
+  width:  275px;
+  height :115px;
+  background-color: blue;
+  top:145px;
+  bottom:  0;
+  right: 0;
+  left: 150px;
+}
+
+#button__playervsplayer{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 100%;
+  height: 100%;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#caja_playervspc{
+  position: absolute;
+  width:  275px;
+  height :115px;
+  top:275px;
+  bottom:  0;
+  right: 0px;
+  left: 20px;
+}
+
+#button__playervspc{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 100%;
+  height: 100%;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#caja_playervsonline{
+  position: absolute;
+  width:  275px;
+  height :115px;
+  top:275px;
+  bottom:  0;
+  right: 0px;
+  left: 305px;
+}
+
+#button__playervsonline{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 100%;
+  height: 100%;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#caja_settings{
+  position: absolute;
+  width:  150px;
+  height :90px;
+  top:0;
+  bottom:  0;
+  right: 0;
+  left: 450px;
+}
+
+#button__settings{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 100%;
+  height: 100%;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#pagina_settings{
+  position: absolute;
+  width  :600px;
+  height :400px;
+  background-color: orange;
+  top:8px;
+  bottom:  0;
+  right: 0;
+  left: 8px;
+}
+
+#caja_exit{
+  position: absolute;
+  width:  100px;
+  height :50px;
+
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#button_exit{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 100%;
+  height: 100%;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+
+
+#caja_color_player2{
+  position: absolute;
+
+  width:  260px;
+  height :90px;
+
+  top:150px;
+  bottom:  0;
+  right: 0;
+  left: 20px;
+}
+
+button.button_color{
+  position: relative;
+  width:  45px;
+  height :50px;
+  background-color: rgba(255,255,255,0);
+  left: 15px;
+  top: 30px;
+  margin-right: 13px;
+
+}
+
+#caja_color_player1{
+  position: absolute;
+  width:  260px;
+  height :90px;
+  top:150px;
+  bottom:  0;
+  right: 0;
+  left: 311px;
+}
+
+#caja_color_bola{
+  position: absolute;
+  width:  260px;
+  height :90px;
+  top:285px;
+  bottom:  0;
+  right: 0;
+  left: 160px;
+}
+
+#pagina_online{
+  position: absolute;
+  width  :600px;
+  height :400px;
+  background-color: black;
+  top:8px;
+  bottom:  0;
+  right: 0;
+  left: 8px;
+}
+
+#caja_iniciar_sesion{
+  position: absolute;
+  width : 50%;
+  height : 100%;
+  top:0px;
+  bottom:  0;
+  right: 0;
+  left: 0px;
+}
+
+#caja_input{
+  position: absolute;
+  width : 204px;
+  height : 20px;
+  top:131px;
+  bottom:  0;
+  right: 0;
+  left: 45px;
+}
+
+#button_buscar_jugadores_online{
+  position: absolute;
+  background-color: rgba(255,0,0,0);
+  width : 50px;
+  height : 64px;
+  top:306px;
+  bottom:  0;
+  right: 0;
+  left: 125px;
+}
+
+
+#caja_buscando_jugadores{
+  position: absolute;
+  background-color: black;
+  width : 50%;
+  height : 100%;
+  top:0px;
+  bottom:  0;
+  right: 0;
+  left: 300px;
+}
+
+#partida_encontrada_imagen{
+  position: absolute;
+  display: none;
+  width : 80%;
+  height : 20%;
+  top:30px;
+  bottom:  0;
+  right: 0;
+  left: 30px;
+}
+
+#foto_jugador_online{
+  position: absolute;
+  display: none;
+  width : 110px;
+  height : 110px;
+  top:200px;
+  bottom:  0;
+  right: 0;
+  left: 30px;
+}
+
+#ficha_jugador_online{
+  position: absolute;
+  display: none;
+  width : 130px;
+  height : 108px;
+  border: 2px solid ;
+  border-color:  rgba(55,139,171,1);;
+  top:199px;
+  bottom:  0;
+  right: 0;
+  left: 140px;
+}
+
+#nombre_jugador_ficha{
+  position: absolute;
+  color: rgba(54,183,232,1);
+
+}
+
+#vs_imagen{
+  position: absolute;
+  display: none;
+  color: rgba(54,183,232,1);
+  width : 40px;
+  height : 40px;
+  top:135px;
+  bottom:  0;
+  right: 0;
+  left: 130px;
+}
+
+#aceptar_partida{
+  position: absolute;
+  display: none;
+  width : 150px;
+  height : 60px;
+  top:330px;
+  bottom:  0;
+  right: 0;
+  left: 80px;
+}
