@@ -3,7 +3,6 @@ console.log("Ejecutando JS...");
 const canvas = document.getElementById("canvas");
 
 console.log(`canvas: Anchura: ${canvas.width}, Altura: ${canvas.height}`);
-//body = document.getElementsByTagName('body')[0]
 const display = document.getElementById("display");
 const start = document.getElementsByClassName("start")
 const caja_finish = document.getElementsByClassName("caja_finish")
@@ -17,47 +16,39 @@ const ESTADO = {
     SAQUE: 1,
     JUGANDO: 2,
 }
-const NOMBRES_JUGADORES = ["Andresxp04","Dorum de ternera","GO CHOCAPIC","Merchan","Faker"]
-
-
+const NOMBRES_JUGADORES = ["Andresxp04","Dorum ternera","GO CHOCAPIC","Merchan","Faker","LeonSergio"]
 const ctx = canvas.getContext("2d");
-
-
 const caja_input = document.getElementById("caja_input")
 
-
-let posY_anterior_raqI = 100;
-let distancia_recorrida_raqI_y = 0;
-let nivel_vy = 360 / 7;
-let velocidadY_por_recorrido = 0;
 let marcador_izquierda = 0;
 let marcador_derecha = 0;
 let estado = ESTADO.INIT;
 let nombre_jugador_online = NOMBRES_JUGADORES;
-
 let juego_playvspc = false;
+let juego_playvsonline = false;
 
 
 function tiempo_busqueda_acabada(){
-    console.log("Pasaron 2 segundos antes de que pudieras ver esto.");
+
     document.getElementById('gif_buscando_jugadores').style.display = 'none';
     document.getElementById('partida_encontrada_imagen').style.display = 'block';
     document.getElementById('foto_jugador_online').style.display = 'block';
     document.getElementById('ficha_jugador_online').style.display = 'block';
     document.getElementById('vs_imagen').style.display = 'block';
     document.getElementById('aceptar_partida').style.display = 'block';
-    nombre_jugador_ficha.innerHTML = nombre_jugador_online[num_random(0,5)] + "<br>" + "Partidas jugadas: " + num_random(0,1000)
+    document.getElementById('button_empezar_partida_online').style.display = 'block';
+    nombre_jugador_online = NOMBRES_JUGADORES[num_random(0,6)];
+    nombre_jugador_ficha.innerHTML = nombre_jugador_online + "<br>" + "Partidas jugadas: " + num_random(0,1000);
 }
 
 
 function color_nuevo_elemento(elemento,color_elegido) {
-  sonido_boton.currentTime = 0;
-  sonido_boton.play();
 
+    sonido_boton.currentTime = 0;
+    sonido_boton.play();
 
-  switch (color_elegido) {
-    case "red":
-
+    switch (color_elegido) {
+      case "red":
         if(elemento == "raqueta_izquierda"){
           raqI.color_raqueta = color_elegido;
         }else if(elemento == "raqueta_derecha"){
@@ -66,8 +57,7 @@ function color_nuevo_elemento(elemento,color_elegido) {
           bola.color_bola = color_elegido;
         }
         break;
-    case "yellow":
-
+      case "yellow":
         if(elemento == "raqueta_izquierda"){
           raqI.color_raqueta = color_elegido;
         }else if(elemento == "raqueta_derecha"){
@@ -76,7 +66,7 @@ function color_nuevo_elemento(elemento,color_elegido) {
           bola.color_bola = color_elegido;
         }
         break;
-    case "blue":
+      case "blue":
         if(elemento == "raqueta_izquierda"){
           raqI.color_raqueta = color_elegido;
         }else if(elemento == "raqueta_derecha"){
@@ -85,7 +75,7 @@ function color_nuevo_elemento(elemento,color_elegido) {
           bola.color_bola = color_elegido;
         }
         break;
-    case "green":
+      case "green":
         if(elemento == "raqueta_izquierda"){
           raqI.color_raqueta = color_elegido;
         }else if(elemento == "raqueta_derecha"){
@@ -94,65 +84,69 @@ function color_nuevo_elemento(elemento,color_elegido) {
           bola.color_bola = color_elegido;
         }
         break;
-  }
+    }
 }
 
 function volver_pagina_principal() {
+
   sonido_boton.currentTime = 0;
   sonido_boton.play();
-
   document.getElementById('pagina_principal').style.display = 'block';
   document.getElementById('pagina_settings').style.display = 'none';
-
 }
 
-
 function juego_pvp() {
+
   sonido_boton.currentTime = 0;
   sonido_boton.play();
-
   document.getElementById('pagina_principal').style.display = 'none';
+  document.getElementById('caja_finish').style.display = 'block';
 }
 
 function juego_plyvspc() {
+
   sonido_boton.currentTime = 0;
   sonido_boton.play();
-  console.log("juego player vs pc");
   document.getElementById('pagina_principal').style.display = 'none';
+  document.getElementById('caja_finish').style.display = 'block';
   juego_playvspc = true;
-
 }
 
-function juego_plyvsonline() {
+function juego_playervsonline() {
+
   sonido_boton.currentTime = 0;
   sonido_boton.play();
-  console.log("juego player vs online");
+  document.getElementById('pagina_online').style.display = 'none';
+  juego_playvspc = true;
+  juego_playvsonline = true;
+}
+
+function abrir_pagina_online() {
+
+  sonido_boton.currentTime = 0;
+  sonido_boton.play();
   document.getElementById('pagina_principal').style.display = 'none';
   document.getElementById('pagina_online').style.display = 'block';
-
 }
 
-
-
 function buscar_jugadores_online() {
+
   sonido_boton.currentTime = 0;
   sonido_boton.play();
   document.getElementById('gif_buscando_jugadores').style.display = 'block';
-  setTimeout(tiempo_busqueda_acabada,1000,"JavaScript");
-  console.log(caja_input.value);
+  setTimeout(tiempo_busqueda_acabada,5000,"JavaScript");
 }
 
 function juego_settings() {
+
   sonido_boton.currentTime = 0;
   sonido_boton.play();
   document.getElementById('pagina_principal').style.display = 'none';
   document.getElementById('pagina_settings').style.display = 'block';
-
 }
 
-
-
 function start_juego() {
+
   sonido_boton.currentTime = 0;
   sonido_boton.play();
   estado = ESTADO.SAQUE;
@@ -160,6 +154,7 @@ function start_juego() {
 }
 
 function finish_juego() {
+
   sonido_boton.currentTime = 0;
   sonido_boton.play();
   estado = ESTADO.INIT;
@@ -171,12 +166,14 @@ function finish_juego() {
 }
 
 function num_random(min, max_exluido) {
+
   let numero_que_salio = 0;
   numero_que_salio = Math.floor(Math.random() * (max_exluido - min)) + min;
   return numero_que_salio;
 }
 
 function draw(){
+
   if (estado == ESTADO.SAQUE) {
      ctx.font = "30px Arial";
      ctx.fillStyle = "yellow";
@@ -205,9 +202,18 @@ function draw(){
   ctx.fillStyle = "white";
   ctx.fillText(marcador_izquierda, 200, 80);
   ctx.fillText(marcador_derecha, 340, 80);
+
+  if (juego_playvsonline){
+    ctx.font = "20px  Comic Sans MS";
+    ctx.fillStyle = "Blue";
+    ctx.fillText(nombre_jugador_online, 440, 50);
+    ctx.fillStyle = "orange";
+    ctx.fillText(caja_input.value, 40, 50);
+  }
 }
 
 function animacion(){
+
   raqI.update();
 
   if (juego_playvspc){
@@ -252,18 +258,12 @@ function animacion(){
       sonido_raqueta.currentTime = 0;
       sonido_raqueta.play();
       bola.vx = bola.vx * -1;
-
-
-
   }
   if (bola.x >= raqD.x && bola.x <=(raqD.x+10) &&
      bola.y >= raqD.y && bola.y <=(raqD.y+40)) {
       sonido_raqueta.currentTime = 0;
       sonido_raqueta.play();
       bola.vx = bola.vx * -1;
-
-
-
   }
 
   bola.update();
@@ -297,17 +297,6 @@ raqD.init();
 document.getElementById('pagina_settings').style.display = 'none';
 document.getElementById('pagina_online').style.display = 'none';
 
-
-
-
-
-
-
-
-
-
-
-
 //-- Arrancar la animación
 setInterval(()=>{
   animacion();
@@ -319,7 +308,6 @@ window.onkeydown = (e) => {
       switch (e.key) {
         case "s":
           if(estado == ESTADO.SAQUE){
-            //body.classList.toggle("color");
             bola.init();
             if(num_random(0,2) == 0){
               bola.vx = bola.vx_ini;
