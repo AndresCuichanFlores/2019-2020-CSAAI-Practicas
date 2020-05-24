@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practica4</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="practica4_jacascript.js" defer>
+      </script>
+  </head>
+  <body>
+
+    <video loop id="video_emision" ></video>
+    <video loop id="video_fuente1" muted></video>
+    <video loop id="video_fuente2" muted></video>
+    <video loop id="video_fuente3" muted></video>
+    <video loop id="video_fuente4" muted></video>
+
+    <p id="titulo_video_emision">Vídeo en emísion</p>
+    <p id="titulo_fuente1">Fuente 1</p>
+    <p id="titulo_fuente2">Fuente 2</p>
+    <p id="titulo_fuente3">Fuente 3</p>
+    <p id="titulo_fuente4">Fuente 4</p>
+
+    <button class ="button_seleccionar" id="seleccionar_fuente1" type="button" onclick="seleccion_fuente1()">Seleccionar</button>
+    <button class ="button_seleccionar" id="seleccionar_fuente2" type="button" onclick="seleccion_fuente2()">Seleccionar</button>
+    <button class ="button_seleccionar" id="seleccionar_fuente3" type="button" onclick="seleccion_fuente3()">Seleccionar</button>
+    <button class ="button_seleccionar" id="seleccionar_fuente4" type="button" onclick="seleccion_fuente4()">Seleccionar</button>
+    <button id ="button_modo_automatico"  type="button" onclick="seleccion_automatico()">Modo automatico</button>
+    <button id ="button_modo_manual"  type="button" onclick="seleccion_manual()">Modo manual</button>
+    <button id ="button_modo_bucle"  type="button" onclick="seleccion_bucle()">Modo bucle</button>
+
+  </body>
+</html>

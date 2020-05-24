@@ -1,0 +1,192 @@
+body {
+  background-color: lightblue;
+}
+
+#video_emision{
+  position: relative;
+  width: 700px;
+  height: 400px;
+  top:40px;
+  bottom:  0;
+  right: 0;
+  left: 400px;
+}
+
+#video_fuente1{
+  position: absolute;
+  width: 210px;
+  height: 120px;
+  top:520px;
+  bottom:  0;
+  right: 0;
+  left: 410px;
+}
+
+#video_fuente2{
+  position: absolute;
+  width: 210px;
+  height: 120px;
+  top:520px;
+  bottom:  0;
+  right: 0;
+  left: 655px;
+}
+
+#video_fuente3{
+  position: absolute;
+  width: 210px;
+  height: 120px;
+  top:520px;
+  bottom:  0;
+  right: 0;
+  left: 900px;
+}
+
+#video_fuente4{
+  position: absolute;
+  width: 210px;
+  height: 120px;
+  top:200px;
+  bottom:  0;
+  right: 0;
+  left: 1200px;
+}
+
+#titulo_video_emision{
+  position: absolute;
+  font-size: 42px;
+  font-style: italic;
+  top:-45px;
+  bottom:  0;
+  right: 0;
+  left: 600px;
+}
+
+#titulo_fuente1{
+  position: absolute;
+  font-size: 35px;
+  top:430px;
+  bottom:  0;
+  right: 0;
+  left: 460px;
+}
+
+#titulo_fuente2{
+  position: absolute;
+  font-size: 35px;
+  top:430px;
+  bottom:  0;
+  right: 0;
+  left: 700px;
+}
+
+#titulo_fuente3{
+  position: absolute;
+  font-size: 35px;
+  top:430px;
+  bottom:  0;
+  right: 0;
+  left: 940px;
+}
+
+#titulo_fuente4{
+  position: absolute;
+  font-size: 35px;
+  top:110px;
+  bottom:  0;
+  right: 0;
+  left: 1240px;
+}
+
+.button_seleccionar{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border: 2px solid;
+  font-size: 15px;
+  background-color: white;
+  border-color: #2196F3;
+  color: dodgerblue;
+  top:0;
+  bottom:  0;
+  right: 0;
+  left: 0;
+}
+
+.button_seleccionar:hover {
+  background: #2196F3;
+  color: white;
+}
+
+#seleccionar_fuente1{
+  top:670px;
+  bottom:  0;
+  right: 0;
+  left: 465px;
+}
+
+#seleccionar_fuente2{
+  top:670px;
+  bottom:  0;
+  right: 0;
+  left: 710px;
+}
+
+#seleccionar_fuente3{
+  top:670px;
+  bottom:  0;
+  right: 0;
+  left: 955px;
+}
+
+#seleccionar_fuente4{
+  top:350px;
+  bottom:  0;
+  right: 0;
+  left: 1250px;
+}
+
+#button_modo_automatico{
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  border: 2px solid;
+  font-size: 18px;
+  background-color: white;
+  border-color: Gray;
+  color: rgba(155,155,155,0.3);
+  top:200px;
+  bottom:  0;
+  right: 0;
+  left: 100px;
+}
+
+#button_modo_manual{
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  border: 2px solid;
+  font-size: 18px;
+  background-color: white;
+  border-color: #4CAF50;
+  color: green;
+  top:200px;
+  bottom:  0;
+  right: 0;
+  left: 220px;
+}
+
+#button_modo_bucle{
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  border: 2px solid;
+  font-size: 18px;
+  background-color: white;
+  border-color:Gray;
+  color: rgba(155,155,155,0.3);
+  top:261px;
+  bottom:  0;
+  right: 0;
+  left: 160px;
+}
