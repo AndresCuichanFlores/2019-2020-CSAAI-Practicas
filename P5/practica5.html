@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Practica5</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="practica5_jacascript.js" defer>
+      </script>
+  </head>
+  <body>
+    <p id= "titulo_imagen_original">Imagen original</p>
+    <img src="harrypotter.jpg" id="imagesrc" style="position:absolute">
+    <canvas id="canvas"></canvas>
+    <br> </br>
+    <div id="deslizador_colores">
+      <input  type="range" id="deslizador_rojo" min="0" max="255" value="0">
+      <p  id="display_rojo">0</p>
+      <br> </br>
+      <input class ="deslizador" type="range" id="deslizador_verde" min="0" max="255" value="0">
+      <p  id="display_verde">0</p>
+      <br> </br>
+      <input  type="range" id="deslizador_azul" min="0" max="255" value="0">
+      <p  id="display_azul">0</p>
+    </div>
+    <br> </br>
+    <p id= "titulo_imagen_manipulada">Imagen Manipulada</p>
+    <button class ="button_seleccionar" id ="button_modo_grises"  type="button" onclick="seleccion_modo_grises()">GRISES</button>
+    <button class ="button_seleccionar" id ="button_modo_colores"  type="button" onclick="seleccion_modo_colores()">COLORES</button>
+  </body>
+</html>
