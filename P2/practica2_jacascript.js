@@ -15,7 +15,7 @@ const digito = document.getElementsByClassName("digito")
 
 var cadena_historial = [];
 var n = 0;
-const max_digitos = 19;
+const max_digitos = 80;
 const max_calculos = 7;
 
 
